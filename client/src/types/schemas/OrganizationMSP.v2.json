@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Organization MSP",
+  "properties": {
+    "admins": {
+      "description": "List of admins certificates as PEM (base64)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "fabric_node_ous": {
+      "description": "Node OUs",
+      "properties": {
+        "admin_ou_identifier": {
+          "properties": {
+            "certificate": {
+              "type": "string"
+            },
+            "organizational_unit_identifier": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "certificate",
+            "organizational_unit_identifier"
+          ],
+          "type": "object"
+        },
+        "client_ou_identifier": {
+          "properties": {
+            "certificate": {
+              "type": "string"
+            },
+            "organizational_unit_identifier": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "certificate",
+            "organizational_unit_identifier"
+          ],
+          "type": "object"
+        },
+        "enable": {
+          "type": "boolean"
+        },
+        "orderer_ou_identifier": {
+          "properties": {
+            "certificate": {
+              "type": "string"
+            },
+            "organizational_unit_identifier": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "certificate",
+            "organizational_unit_identifier"
+          ],
+          "type": "object"
+        },
+        "peer_ou_identifier": {
+          "properties": {
+            "certificate": {
+              "type": "string"
+            },
+            "organizational_unit_identifier": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "certificate",
+            "organizational_unit_identifier"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "enable"
+      ],
+      "type": "object"
+    },
+    "intermediate_certs": {
+      "description": "List of intermediate CA certificates as PEM (base64)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "msp_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "root_certs": {
+      "description": "List of root CA certificates as PEM (base64)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "tls_intermediate_certs": {
+      "description": "List of intermediate TLS CA certificates as PEM (base64)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "tls_root_certs": {
+      "description": "List of root TLS CA certificates as PEM (base64)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "admins",
+    "display_name",
+    "intermediate_certs",
+    "msp_id",
+    "name",
+    "root_certs",
+    "tls_intermediate_certs",
+    "tls_root_certs"
+  ],
+  "type": "object"
+}
+

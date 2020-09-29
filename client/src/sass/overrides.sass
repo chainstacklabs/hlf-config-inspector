@@ -1,0 +1,111 @@
+// =========================================================
+// * Vuetify Material Dashboard - v2.1.0
+// =========================================================
+//
+// * Product Page: https://www.creative-tim.com/product/vuetify-material-dashboard
+// * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+//
+// * Coded by Creative Tim
+//
+// =========================================================
+//
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+// Creative Tim refine style code
+@import vuetify-material/sidebar
+@import vuetify-material/appbar
+@import vuetify-material/buttons
+@import vuetify-material/pagination
+@import vuetify-material/footer
+@import vuetify-material/view
+@import vuetify-material/settings
+@import vuetify-material/card
+@import vuetify-material/table
+@import vuetify-material/tab
+@import vuetify-material/notification
+@import vuetify-material/modal
+@import vuetify-material/map
+@import vuetify-material/chip
+@import jsoneditor
+
+.v-btn
+  margin-right: 0 !important
+  margin-bottom: 2px
+
+  &.v-size--default,
+  &.v-size--large
+    &:not(.v-btn--icon):not(.v-btn--fab)
+      padding: 0 30px !important
+
+.theme--light.v-list-item .v-list-item__action-text,
+.theme--light.v-list-item .v-list-item__subtitle
+  color: #999
+
+.theme--light.v-text-field>.v-input__control>.v-input__slot:before
+  border-color: #d2d2d2
+
+.v-label.v-label,
+.v-alert.v-alert
+  font-size: $font-size-root
+
+.theme--light
+  .v-main
+    background-color: #ddd
+
+  .v-stepper
+    background-color: #eee
+
+  &.v-btn
+    &.red, &.purple, &.blue
+      color: white
+
+  // Scrollbar
+  ::-webkit-scrollbar
+    width: 15px
+
+  ::-webkit-scrollbar-track
+    background: #e6e6e6
+    border-left: 1px solid #dadada
+
+  ::-webkit-scrollbar-thumb
+    background: #b0b0b0
+    border: solid 3px #e6e6e6
+    border-radius: 7px
+
+  ::-webkit-scrollbar-thumb:hover
+    background: black
+
+code
+  color: #555 !important
+
+  &.yaml,
+  &.json
+    white-space: break-spaces
+    background-color: transparent
+
+.theme--dark
+  .v-main
+    background-color: #333
+
+  // Dark code
+  code
+    color: lightskyblue !important
+
+    &:not(.yaml):not(.json)
+      background-color: black !important
+
+  // Scrollbar
+  ::-webkit-scrollbar
+    width: 15px
+
+  ::-webkit-scrollbar-track
+    background: #202020
+    border-left: 1px solid #2c2c2c
+
+  ::-webkit-scrollbar-thumb
+    background: #3e3e3e
+    border: solid 3px #202020
+    border-radius: 7px
+
+  ::-webkit-scrollbar-thumb:hover
+    background: white

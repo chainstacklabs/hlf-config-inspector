@@ -1,0 +1,209 @@
+/* dark styling of the editor */
+.theme--dark .jsoneditor {
+  border: none;
+
+  .jsoneditor-statusbar {
+    color: #7f7f7f;
+    background-color: #141414;
+    border-top: none;
+  }
+
+  .ace-jsoneditor {
+    .ace_gutter {
+      background: #141414;
+      color: #ccc;
+    }
+
+    &.ace_editor {
+      background-color: #fff;
+    }
+
+    .ace_print-margin {
+      background: #171717
+    }
+
+    .ace_scroller {
+      background-color: #222;
+    }
+
+    .ace_text-layer {
+      color: gray;
+    }
+
+    .ace_variable {
+      color: #e5e5e5;
+    }
+
+    .ace_cursor {
+      border-left: 2px solid #ffffff;
+    }
+
+    .ace_overwrite-cursors .ace_cursor {
+      border-bottom: 1px solid #000000;
+    }
+
+    .ace_marker-layer .ace_selection {
+      background: #555;
+    }
+
+    .ace-jsoneditor.ace_multiselect .ace_selection.ace_start {
+      box-shadow: 0 0 3px 0 #000000;
+    }
+
+    .ace_marker-layer .ace_step {
+      background: rgb(255, 255, 0)
+    }
+
+    .ace_marker-layer .ace_bracket {
+      margin: -1px 0 0 -1px;
+      border: 1px solid #BFBFBF;
+    }
+
+    .ace_marker-layer .ace_active-line {
+      background-color: var(--v-primary-base) !important;
+    }
+
+    .ace_gutter-active-line {
+      background-color: #232323;
+    }
+
+    .ace_marker-layer .ace_selected-word {
+      border: 1px solid #2c2c2c;
+    }
+
+    .ace_invisible {
+      color: #404040;
+    }
+
+    .ace_keyword,
+    .ace_meta,
+    .ace_support.ace_constant.ace_property-value {
+      color: #AF956F;
+    }
+
+    .ace_keyword.ace_operator {
+      color: #484848;
+    }
+
+    .ace_keyword.ace_other.ace_unit {
+      color: #96DC5F;
+    }
+
+    .ace_constant.ace_language {
+      color: darkorange;
+    }
+
+    .ace_constant.ace_numeric {
+      color: lightcoral;
+    }
+
+    .ace_constant.ace_character.ace_entity {
+      color: #BF78CC;
+    }
+
+    .ace_invalid {
+      color: #FFFFFF;
+      background-color: #FF002A;
+    }
+
+    .ace_fold {
+      background-color: #AF956F;
+      border-color: #000000;
+    }
+
+    .ace_storage,
+    .ace_support.ace_class,
+    .ace_support.ace_function,
+    .ace_support.ace_other,
+    .ace_support.ace_type {
+      color: #C52727;
+    }
+
+    .ace_string {
+      color: var(--v-primary-lighten3)
+    }
+
+    .ace_comment {
+      color: #BCC8BA;
+    }
+
+    .ace_entity.ace_name.ace_tag,
+    .ace_entity.ace_other.ace_attribute-name {
+      color: #606060;
+    }
+
+    .ace_indent-guide {
+      filter: invert(1);
+    }
+  }
+}
+
+.theme--light {
+  .ace-jsoneditor {
+    .ace_active-line {
+      background-color: var(--v-primary-lighten4) !important;
+    }
+
+    .ace_constant.ace_numeric {
+      color: lightcoral;
+    }
+
+    .ace_string {
+      color: var(--v-primary-lighten1)
+    }
+  }
+}
+
+
+div.jsoneditor,
+div.jsoneditor-menu {
+  border-color: #4b4b4b;
+}
+
+div.jsoneditor-menu {
+  background-color: #4b4b4b;
+}
+
+div.jsoneditor-tree,
+div.jsoneditor textarea.jsoneditor-text {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+div.jsoneditor-field,
+div.jsoneditor-value {
+  color: #ffffff;
+}
+
+table.jsoneditor-search div.jsoneditor-frame {
+  background: #808080;
+}
+
+tr.jsoneditor-highlight,
+tr.jsoneditor-selected {
+  background-color: #808080;
+}
+
+div.jsoneditor-field[contenteditable="true"]:focus,
+div.jsoneditor-field[contenteditable="true"]:hover,
+div.jsoneditor-value[contenteditable="true"]:focus,
+div.jsoneditor-value[contenteditable="true"]:hover,
+div.jsoneditor-field.jsoneditor-highlight,
+div.jsoneditor-value.jsoneditor-highlight {
+  background-color: #808080;
+  border-color: #808080;
+}
+
+div.jsoneditor-field.highlight-active,
+div.jsoneditor-field.highlight-active:focus,
+div.jsoneditor-field.highlight-active:hover,
+div.jsoneditor-value.highlight-active,
+div.jsoneditor-value.highlight-active:focus,
+div.jsoneditor-value.highlight-active:hover {
+  background-color: #b1b1b1;
+  border-color: #b1b1b1;
+}
+
+div.jsoneditor-tree button:focus {
+  background-color: #868686;
+}
